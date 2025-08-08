@@ -2,11 +2,11 @@
 
 A comprehensive implementation of iterative methods for solving linear systems, with a focus on the 2D Poisson equation and performance analysis.
 
-## 🎯 Overview
+## Overview
 
 This project implements and analyzes iterative numerical methods for solving large sparse linear systems, particularly those arising from discretized partial differential equations. The main focus is on the **Jacobi iteration method** applied to **2D Poisson equations**.
 
-## 📋 Features
+## Features
 
 ### Core Algorithms
 - **Jacobi Iteration Method** - Stationary iterative solver with convergence analysis
@@ -15,14 +15,14 @@ This project implements and analyzes iterative numerical methods for solving lar
 - **Sparse Matrix Operations** - Efficient storage and computation for large matrices
 
 ### Advanced Capabilities
-- ✅ **Robust Convergence Checking** - Multiple convergence criteria and error tolerance
-- ✅ **Performance Analysis** - Operation counting and iteration tracking
-- ✅ **Diagonal Dominance Verification** - Ensures Jacobi method convergence
-- ✅ **Boundary Condition Handling** - Proper 2D grid boundary treatment
-- ✅ **Visualization** - Performance plots and convergence analysis
-- ✅ **Error Handling** - Comprehensive error checking and warnings
+- ✓ **Robust Convergence Checking** - Multiple convergence criteria and error tolerance
+- ✓ **Performance Analysis** - Operation counting and iteration tracking
+- ✓ **Diagonal Dominance Verification** - Ensures Jacobi method convergence
+- ✓ **Boundary Condition Handling** - Proper 2D grid boundary treatment
+- ✓ **Visualization** - Performance plots and convergence analysis
+- ✓ **Error Handling** - Comprehensive error checking and warnings
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -49,7 +49,7 @@ x_initial = np.zeros(25)
 solution = jacobi_algorithm(A, x_initial, b, eps=1e-8)
 ```
 
-## 📊 Mathematical Background
+## Mathematical Background
 
 ### 2D Poisson Equation
 The discrete 2D Poisson equation on an N×N grid:
@@ -75,7 +75,7 @@ Where:
 - **L** = strictly lower triangular 
 - **U** = strictly upper triangular
 
-## 🔬 Implementation Details
+## Implementation Details
 
 ### Matrix Storage
 - **Sparse representation** for off-diagonal elements
@@ -92,7 +92,7 @@ Where:
 - Minimal memory allocation in iterations
 - Early convergence detection
 
-## 📈 Results & Analysis
+## Results & Analysis
 
 ### Convergence Behavior
 - **Grid Size vs Iterations**: Linear scaling with problem size
@@ -112,7 +112,7 @@ Where:
 - **Memory usage**: O(n²) storage
 - **Convergence rate**: O(h²) where h is grid spacing
 
-## 🧮 Key Functions
+## Key Functions
 
 ### `poisson_2d(N)`
 Generates N²×N² matrix for 2D Poisson equation with proper boundary conditions.
@@ -126,7 +126,7 @@ Splits matrix A into diagonal (d) and off-diagonal (a_zero) components.
 ### `poisson_LU(n)`
 Performs LU factorization with operation counting for comparison.
 
-## 🎓 Educational Value
+## Educational Value
 
 This implementation demonstrates:
 - **Iterative vs Direct Methods** - Trade-offs between memory and computation
@@ -135,7 +135,7 @@ This implementation demonstrates:
 - **Numerical Stability** - Error analysis and robustness
 - **Performance Analysis** - Algorithmic complexity in practice
 
-## 🔬 Applications
+## Applications
 
 ### Scientific Computing
 - Heat diffusion equations
@@ -152,13 +152,13 @@ This implementation demonstrates:
 - Circuit simulation
 - Optimization problems
 
-## 📚 References
+## References
 
 - **Linear Algebra**: David C. Lay, "Linear Algebra and Its Applications"
 - **Numerical Methods**: Burden & Faires, "Numerical Analysis"
 - **Iterative Methods**: Yousef Saad, "Iterative Methods for Sparse Linear Systems"
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to contribute improvements:
 - Additional iterative methods (Gauss-Seidel, SOR, CG)
@@ -166,7 +166,7 @@ Feel free to contribute improvements:
 - GPU acceleration
 - Advanced preconditioners
 
-## 📄 License
+## License
 
 This project is part of a Linear Algebra (340L) course assignment. Educational use encouraged.
 
